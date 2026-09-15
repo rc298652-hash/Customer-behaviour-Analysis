@@ -16,11 +16,18 @@ End-to-end analysis of 3,900 customer purchase records using Python and SQL, bui
 - About half the customer base are first-time buyers — repeat-purchase conversion is the biggest growth lever
 - Subscribed customers spend more per transaction and purchase more frequently than non-subscribers
 
+## Dashboard
+
+Built an interactive Power BI dashboard on top of the same dataset — filterable by subscription status, gender, category, and shipping type. Shows revenue and sales breakdowns by category and age group, average purchase amount, and average review rating.
+
+
+
 ## Tools used
 
 - Python (Pandas, SQLAlchemy)
 - MySQL
 - SQL
+- Power BI
 - Gamma AI (presentation design)
 
 ## Project structure
@@ -29,20 +36,14 @@ End-to-end analysis of 3,900 customer purchase records using Python and SQL, bui
 ├── customer_shopping_behavior.csv   # raw dataset
 ├── New_p.ipynb                       # data cleaning + MySQL load (Python)
 ├── Project.sql                       # 10 business-question SQL queries
+├── dashboard.pbix                    # Power BI dashboard
+├── dashboard.png                     # dashboard screenshot (for preview, since GitHub can't render .pbix)
 ├── requirements.txt                  # Python dependencies
 ├── .env.example                      # template for DB credentials (copy to .env, do not commit .env)
 └── .gitignore
 ```
 
-## How to run this yourself
-
-1. Clone this repo
-2. Install dependencies: `pip install -r requirements.txt`
-3. Copy `.env.example` to `.env` and fill in your own MySQL credentials
-4. Run `New_p.ipynb` to clean the data and load it into MySQL
-5. Run the queries in `Project.sql` against the loaded table
 
 ## Notes
-This project was built end-to-end by me — data cleaning and SQL analysis are original work. The presentation slides were generated using Gamma AI based on the analysis findings.
 
 This project was built end-to-end by me — data cleaning and SQL analysis are original work. The presentation slides were generated using Gamma AI based on the analysis findings.
