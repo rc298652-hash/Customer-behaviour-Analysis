@@ -26,3 +26,7 @@ Gamma AI (presentation design)
 ├── requirements.txt                  # Python dependencies
 ├── .env.example                      # template for DB credentials (copy to .env, do not commit .env)
 └── .gitignore
+
+**Notes
+
+This project was built end-to-end by me — data cleaning and SQL analysis are original work. The presentation slides were generated using Gamma AI based on the analysis findings.**
